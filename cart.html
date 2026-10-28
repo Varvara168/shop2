@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">ONLINE-SHOP</div>
+    <nav>
+        <a href="main.html">Главная</a>
+        <a href="main.html">Каталог</a>
+        <a href="login.html" id="profile-link">Профиль</a>
+    </nav>
+    <a class="cart" href="cart.html">
+        Корзина (<span id="cart-count">0</span>)
+    </a>
+</header>
+
+<main class="cart-page">
+    <h1>Моя корзина</h1>
+    <div id="cart-list"></div>
+    <div class="cart-total">
+        Общая сумма: <span id="cart-total">0</span> $
+    </div>
+    <a class="back-button" href="main.html">
+        Продолжить покупки
+    </a>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>

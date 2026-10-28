@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">ONLINE-SHOP</div>
+    <nav>
+        <a href="main.html">Главная</a>
+        <a href="main.html">Каталог</a>
+        <a href="login.html" id="profile-link">Профиль</a>
+        <a href="profile.html#orders">Заказы</a>
+    </nav>
+    <a class="cart" href="cart.html">
+        Корзина (<span id="cart-count">0</span>)
+    </a>
+</header>
+
+<main class="profile-page">
+    <div class="profile-info">
+        <div class="avatar" id="profile-avatar">П</div>
+
+        <h1 id="profile-name">Пользователь</h1>
+
+        <p id="profile-email"></p>
+
+        <button class="logout-button" onclick="logoutUser()">
+            Выйти из аккаунта
+        </button>
+    </div>
+
+    <h2>Моё избранное</h2>
+
+    <div id="favorite-list"></div>
+
+    <h2>Моя корзина (<span id="profile-cart-count">0</span>)</h2>
+
+    <div id="cart-list"></div>
+
+    <div class="cart-total">
+        Общая сумма: <span id="cart-total">0</span> $
+    </div>
+
+    <a class="back-button" href="cart.html">
+        Открыть корзину
+    </a>
+
+    <div id="orders">
+        <h2>Мои заказы</h2>
+        <p>Заказов пока неть</p>
+    </div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>

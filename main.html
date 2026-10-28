@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE-SHOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">ONLINE-SHOP</div>
+    <nav>
+        <a href="main.html">Главная</a>
+        <a href="main.html">Каталог</a>
+        <a href="login.html" id="profile-link">Профиль</a>
+        <a href="profile.html#orders">Заказы</a>
+    </nav>
+    <a class="cart" href="cart.html">
+        Корзина (<span id="cart-count">0</span>)
+    </a>
+</header>
+
+<div class="filters">
+    <input type="text" id="search" placeholder="Поиск товара..." oninput="showProducts()">
+
+    <select id="category" onchange="showProducts()">
+        <option value="all">Все категории</option>
+        <option value="Одежда">Одежда</option>
+        <option value="Электроника">Электроника</option>
+        <option value="Инструменты">Инструменты</option>
+        <option value="Животные">Животные</option>
+    </select>
+
+    <select id="sort" onchange="showProducts()">
+        <option value="default">Без сортировки</option>
+        <option value="price-up">Цена по возрастанию</option>
+        <option value="price-down">Цена по убыванию</option>
+        <option value="name">По названию</option>
+    </select>
+</div>
+
+<main>
+    <div id="product-list"></div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>

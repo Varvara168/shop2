@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">ONLINE-SHOP</div>
+    <nav>
+        <a href="main.html">Главная</a>
+        <a href="main.html">Каталог</a>
+        <a href="login.html" id="profile-link">Профиль</a>
+        <a href="profile.html#orders">Заказы</a>
+    </nav>
+    <a class="cart" href="cart.html">
+        Корзина (<span id="cart-count">0</span>)
+    </a>
+</header>
+
+<main class="login-page">
+    <div class="login-form">
+
+        <div id="login-block">
+            <h2>Вход в аккаунт</h2>
+            <input type="text" id="login-name" placeholder="Имя пользователя">
+            <input type="password" id="login-password" placeholder="Пароль">
+            <button onclick="loginUser()">Войти</button>
+
+            <p>
+                Нет аккаунта?
+                <button class="switch-button" onclick="showRegister()">Зарегистрироваться</button>
+            </p>
+        </div>
+
+        <div id="reg-block" style="display: none;">
+            <h2>Регистрация</h2>
+            <input type="text" id="reg-name" placeholder="Имя пользователя">
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="password" id="reg-password" placeholder="Пароль">
+            <button onclick="registerUser()">Зарегистрироваться</button>
+
+            <p>
+                Уже есть аккаунт?
+                <button class="switch-button" onclick="showLogin()">Войти</button>
+            </p>
+        </div>
+
+    </div>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>
